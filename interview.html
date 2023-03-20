@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <ul id="btn">
+    <li id="btn1">111</li>
+    <li>222</li>
+    <li>333</li>
+    <li>444</li>
+</ul>
+<script>
+
+// third
+//获取观察者
+let btn=document.querySelector("#btn")
+//添加观察
+btn.addEventListener('myFirstEvent',function(e){
+    console.log("btn监听到了事件",e);  
+})
+ // 自定义事件
+ var selfEvent = new CustomEvent('myFirstEvent',{
+        "detail" : {  //可携带额外的数据
+            age : 18
+        },
+        "bubbles" : true,//是否冒泡    回调函数中调用，e.stopPropagation();可以阻止冒泡
+        "cancelable" : false,//是否可以取消  为true时，event.preventDefault();才可以阻止默认动作行为
+    });
+    // 事件分发，触发通知，触发该通知的节点为目标对象
+    let btn1=document.getElementById("btn1");
+    btn1.dispatchEvent(e);
+
+// second
+// let btn=document.querySelector("#btn");
+
+// //2.观察：让观察者观察特定类型的事件
+// btn.addEventListener('click',function(e){
+//  console.log("监听到点击了btn",e)
+// })
+// btn.click()
+//3.通知：某些操作触发通知，触发该通知的节点为目标对象
+//即：用户主动点击或模拟点击btn.click()
+
+  // first
+//   window.onload = function(){
+// 　　var oUl = document.getElementById("ul1");
+// 　　oUl.onclick = function(ev){
+// 　　　　var ev = ev || window.event;
+// console.log(ev)
+// 　　　　var target = ev.target || ev.srcElement;// target表示在事件冒泡中触发事件的源元素，在IE中是srcElement  
+// 　　　　if(target.nodeName.toLowerCase() == 'li'){
+// 　 　　　　　　    alert(123);
+// 　　　　　　　  　alert(target.innerHTML);
+// 　　　　}
+// 　　}
+// }
+</script>
+</body>
+</html>
