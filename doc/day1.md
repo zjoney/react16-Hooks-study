@@ -21,7 +21,7 @@
 
 -   [requestAnimationFrame](https://developer.mozilla.org/zh-CN/docs/Web/API/Window/requestAnimationFrame)回调函数会在绘制之前执行
 
-```
+```js
 <!DOCTYPE html>
 <html lang="en">
 
