@@ -72,7 +72,7 @@
 
 ![cooperativescheduling2](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/24c09d00e5e74238911695d7723aba6f~tplv-k3u1fbpfcp-zoom-1.image)
 
-```
+```js
 window.requestIdleCallback(
   callback: (deaLine: IdleDeadline) => void,
   option?: {timeout: number}
