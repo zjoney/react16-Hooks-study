@@ -93,7 +93,7 @@ interface IdleDeadline {
 
     -   timeout。表示超过这个时间后，如果任务还没执行，则强制执行，不必等待空闲
 
-```
+```js
 <body>
     <script>
         function sleep(d) {
@@ -146,7 +146,7 @@ interface IdleDeadline {
 
 ![phones](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/60550d8391894cbc9b48308500080bd2~tplv-k3u1fbpfcp-zoom-1.image)
 
-```
+```js
 var channel = new MessageChannel();
 //channel.port1
 //channel.port2
