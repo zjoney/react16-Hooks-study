@@ -152,7 +152,7 @@ var channel = new MessageChannel();
 //channel.port2
 ```
 
-```
+```js
 var channel = new MessageChannel();
 var port1 = channel.port1;
 var port2 = channel.port2;
