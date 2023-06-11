@@ -166,7 +166,7 @@ port1.postMessage("发送给port2");
 port2.postMessage("发送给port1");
 ```
 
-```
+```js
 <!DOCTYPE html>
 <html lang="en">
 
