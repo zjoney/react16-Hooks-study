@@ -256,7 +256,7 @@ port2.postMessage("发送给port1");
 -   React 会递归比对VirtualDOM树，找出需要变动的节点，然后同步更新它们。这个过程 React 称为Reconcilation(协调)
 -   在`Reconcilation`期间，React 会一直占用着浏览器资源，一则会导致用户触发的事件得不到响应, 二则会导致掉帧，用户可能会感觉到卡顿
 
-```
+```js
 let root = {
     key: 'A1',
     children: [
@@ -307,7 +307,7 @@ walk(root);
 
 ![fiberconstructor](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0ea4cf2e9ce746f19982035252535bfc~tplv-k3u1fbpfcp-zoom-1.image)
 
-```
+```js
 type Fiber = {
   //类型  
   type: any,
@@ -332,7 +332,7 @@ type Fiber = {
 
 #### 5.1.1 element.js
 
-```
+```js
 let A1 = { type: 'div', key: 'A1' };
 let B1 = { type: 'div', key: 'B1', return: A1 };
 let B2 = { type: 'div', key: 'B2', return: A1 };
