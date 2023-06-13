@@ -356,7 +356,7 @@ module.exports = A1;
 
 ![fiberconstructortranverse3](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/975e6ffe1b6a47f69476ccbc1e07298f~tplv-k3u1fbpfcp-zoom-1.image)
 
-```
+```js
 let rootFiber = require('./element');
 //下一个工作单元
 let nextUnitOfWork = null;
