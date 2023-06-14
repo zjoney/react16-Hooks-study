@@ -404,7 +404,7 @@ workLoop();
 
 ![fibereffectlist4](https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a182efc0c64c443f8a07265a6d52354a~tplv-k3u1fbpfcp-zoom-1.image)
 
-```
+```js
 let container = document.getElementById('root');
 let C1 = { type: 'div', key: 'C1', props: { id: 'C1', children: [] } };
 let C2 = { type: 'div', key: 'C2', props: { id: 'C2', children: [] } };
