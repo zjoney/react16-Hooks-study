@@ -27,7 +27,7 @@ console.log(element);
 
 src\react.js
 
-```
+```js
 import { ELEMENT_TEXT } from './constants';
 function createElement(type, config, ...children) {
     delete config.__self;
