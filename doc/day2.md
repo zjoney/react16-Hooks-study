@@ -60,7 +60,7 @@ export default React;
 
 ### 2.1 index.js
 
-```
+```js
 import React from './react';
 import ReactDOM from './react-dom';
 +let style = { border: '3px solid red', margin: '5px' };
