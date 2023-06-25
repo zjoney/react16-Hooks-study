@@ -97,7 +97,7 @@ src\constants.js
 
 src\utils.js
 
-```
+```js
 function setProp(dom, key, value) {
     if (/^on/.test(key)) {
         dom[key.toLowerCase()] = value;
