@@ -136,7 +136,7 @@ export function setProps(elem, oldProps, newProps) {
 
 src\react-dom.js
 
-```
+```js
 import { TAG_ROOT } from './constants';
 import { scheduleRoot } from './scheduler';
 
