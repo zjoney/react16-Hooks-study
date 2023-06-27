@@ -158,7 +158,7 @@ export default {
 
 src\scheduler.js
 
-```
+```js
 import { setProps } from './utils';
 import {
     ELEMENT_TEXT, TAG_ROOT, TAG_HOST, TAG_TEXT, PLACEMENT
