@@ -330,7 +330,7 @@ requestIdleCallback(workLoop);
 
 ### 3.1 public\index.html
 
-```
+```js
 <body>
   <div id="root"></div>
   <button id="reRender1">reRender1</button>
@@ -342,7 +342,7 @@ requestIdleCallback(workLoop);
 
 src\index.js
 
-```
+```js
 import React from './react';
 import ReactDOM from './react-dom';
 let style = { border: '3px solid red', margin: '5px' };
@@ -405,7 +405,7 @@ ReactDOM.render(
 
 ### 3.3 src\constants.js
 
-```
+```js
 export const ELEMENT_TEXT = Symbol.for('ELEMENT_TEXT');
 
 export const TAG_ROOT = Symbol.for('TAG_ROOT');
