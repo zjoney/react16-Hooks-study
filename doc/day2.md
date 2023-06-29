@@ -421,7 +421,7 @@ export const PLACEMENT = Symbol.for('PLACEMENT');
 
 src\scheduler.js
 
-```
+```js
 import { setProps } from './utils';
 import {
     ELEMENT_TEXT, TAG_ROOT, TAG_HOST, TAG_TEXT, PLACEMENT, DELETION, UPDATE
