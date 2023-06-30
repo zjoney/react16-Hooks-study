@@ -648,7 +648,7 @@ requestIdleCallback(workLoop);
 
 ### 4.1 src\index.js
 
-```
+```js
 import React from './react';
 import ReactDOM from './react-dom';
 +class ClassCounter extends React.Component {
