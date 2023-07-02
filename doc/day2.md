@@ -718,7 +718,7 @@ export default React;
 
 src\constants.js
 
-```
+```js
 export const ELEMENT_TEXT = Symbol.for('ELEMENT_TEXT');
 
 export const TAG_ROOT = Symbol.for('TAG_ROOT');
