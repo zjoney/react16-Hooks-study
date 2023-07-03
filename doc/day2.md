@@ -735,7 +735,7 @@ export const DELETION = Symbol.for('DELETION');
 
 src\updateQueue.js
 
-```
+```js
 export class Update {
     constructor(payload) {
         this.payload = payload;
@@ -770,7 +770,7 @@ export class UpdateQueue {
 
 src\utils.js
 
-```
+```js
 function setProp(dom, key, value) {
     if (/^on/.test(key)) {
         dom[key.toLowerCase()] = value;
@@ -815,7 +815,7 @@ export function setProps(elem, oldProps, newProps) {
 
 src\scheduler.js
 
-```
+```js
 import { setProps,deepEquals } from './utils';
 +import { UpdateQueue } from './updateQueue';
 +import _ from 'lodash';
@@ -1072,7 +1072,7 @@ requestIdleCallback(workLoop);
 
 src\index.js
 
-```
+```js
 +function FunctionCounter() {
 +  return (
 +    <h1>
