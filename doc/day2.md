@@ -1107,7 +1107,7 @@ export const DELETION = Symbol.for('DELETION');
 
 src\scheduler.js
 
-```
+```js
 import { setProps, deepEquals } from './utils';
 import { UpdateQueue } from './updateQueue';
 +import {
