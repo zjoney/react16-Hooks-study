@@ -1362,7 +1362,7 @@ requestIdleCallback(workLoop);
 
 src\index.js
 
-```
+```js
 import React from './react';
 import ReactDOM from './react-dom';
 
