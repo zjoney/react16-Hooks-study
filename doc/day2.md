@@ -1441,7 +1441,7 @@ export default React;
 
 src\scheduler.js
 
-```
+```js
 import { setProps, deepEquals } from './utils';
 +import { UpdateQueue, Update } from './updateQueue';
 import {
